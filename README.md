@@ -1,6 +1,6 @@
 ## Escenario 1: Farmear Aura
 
-[Diagrama de Farmeo Aura](zhenChao/src/reto-001/images/DOM_AURA.png)
+[Diagrama de Farmeo Aura](/entregas/zhenChao/src/reto-001/images/DOM_AURA.png)
 
 ### Entidades
 * **Persona:** Entidad única unificada que puede asumir el rol de protagonista (quien actúa) o de testigo (quien observa y juzga).
@@ -20,7 +20,7 @@
 
 ## Escenario 2: El Concepto de Simpatía
 
-[Diagrama de Simpatía](zhenChao/src/reto-001/images/DOM_SIMPATIA.png)
+[Diagrama de Simpatía](entregas/zhenChao/src/reto-001/images/DOM_SIMPATIA.png)
 
 ### Entidades
 * **Persona:** Entidad única unificada que actúa tanto como emisor y como juez.
@@ -39,7 +39,7 @@
 
 ## Escenario 3: Una Sombra
 
-[ Diagrama de la Sombra](zhenChao/src/reto-001/images/DOM_SOMBRA.png)
+[ Diagrama de la Sombra](entregas/zhenChao/src/reto-001/images/DOM_SOMBRA.png)
 
 ### Entidades
 * **Fuente de Luz:** Emisor de luz.
