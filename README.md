@@ -1,34 +1,55 @@
-# Ingeniería del software I
+## Escenario 1: Farmear Aura
 
-Repo de materiales y proyectos de la asignatura **Ingeniería del software I** del [Grado de Ingeniería Informática](https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica) la [Universidad Europea del Atlántico](https://www.uneatlantico.es).
+[Diagrama de Farmeo Aura](zhenChao/src/reto-001/images/DOM_AURA.png)
 
-## Curso *[26][27]*
+### Entidades
+* **Persona:** Entidad única unificada que puede asumir el rol de protagonista (quien actúa) o de testigo (quien observa y juzga).
+* **Aura:** Acción específica ejecutada por la persona.
+* **Evento Social:** Contexto o situación donde es ejecutada la acción.
+* **Impacto:** El "golpe" social directo derivado de la acción.
+* **Lugar:** Espacio físico o digital que enmarca el evento social.
 
-- [Temario](https://github.com/mmasias/idsw1/blob/main/README.md)
-  - [A día de hoy, deberíamos saber...](temario/aDiaDeHoy.md)
-  - [Casos de uso](temario/casosDeUso/README.md)
-  - [Ejercicios](temario/ejercicios/README.md)
-- Evaluaciones
-  - Evaluación continua: [Retos!](evaluaciones/retos/README.md)
-  - Exámenes
-    - Parcial: [Enunciado](evaluaciones/examenes/examenParcial/README.md) | Repositorio de trabajo y entrega.
-    - Final: [Enunciado](evaluaciones/examenes/examenFinal/README.md) | Repositorio de trabajo y entrega.
-    - Extraordinario: [Enunciado](evaluaciones/examenes/examenExtraordinario/README.md) | Repositorio de trabajo y entrega.
+### Consideraciones
+* El aura no es autogestionable; carece de valor si no hay una audiencia.
+* Tanto la acción realizada como el impacto que produce suceden de forma simultánea durante la interacción
 
-> ***NOTA:*** Los repositorios de entrega de exámenes estarán disponible días antes del examen. El repositorio con el enunciado del examen se activa al inicio del examen y permitirá entregas hasta la finalización del mismo.
+### Justificaciones de Modelado
+* En el modelado estricto, una entidad debe gestionar sus propios datos. Por lo tanto, es discutible permitir que una entidad externa (rol de testigo) determine directamente el Aura de otra (rol de protagonista). 
 
-## Herramientas et al
+---
 
-- [GIT](https://git-scm.com/) & [GitHub](https://github.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [PlantText](https://www.planttext.com/), para usar el formato [PlantUML](https://plantuml.com/es/) al realizar diagramas de: [actividades](https://plantuml.com/es/activity-diagram-beta) / [estados](https://plantuml.com/es/state-diagram) / [clases](https://plantuml.com/es/class-diagram) / [objetos](https://plantuml.com/es/object-diagram) / [y otros...](https://plantuml.com/es/sitemap-language-specification)
-- [Google Docs](https://drive.google.com/drive/u/0/my-drive)
-- [Plantillas](/documentos/plantillas.md)
+## Escenario 2: El Concepto de Simpatía
 
-## Bibliografía & enlaces interesantes
+[Diagrama de Simpatía](zhenChao/src/reto-001/images/DOM_SIMPATIA.png)
 
-NOTA: *Algunos enlaces podrían requerir **credenciales de acceso al campus** o a otros espacios colaborativos.*
+### Entidades
+* **Persona:** Entidad única unificada que actúa tanto como emisor y como juez.
+* **Comportamiento:** La acción mostrada.
+* **Evaluación Social:** El proceso cognitivo mediante el cual una persona juzga un comportamiento.
+* **Rasgo Social:** La etiqueta final adjudicada.
 
-- Hoja de asistencia et-al
-- Libro de la asignatura
-- Este repo, versión de ediciones pasadas
+### Consideraciones
+* La simpatía es un fenómeno estrictamente relacional y perceptivo, no una variable genética o intrínseca de una persona.
+* No hay transitividad directa; para saber quién es simpático, es obligatorio rastrear el comportamiento evaluado.
+
+### Justificaciones de Modelado
+* Se decidió modelarlo así porque en la vida real nadie es 'simpático' o 'antipático' de forma absoluta. Es una cuestión de perspectiva. Por eso el modelo refleja que este rasgo no es una característica que la persona simplemente 'tiene', sino que es una etiqueta que nace únicamente después de que alguien más evalúa su comportamiento.
+
+---
+
+## Escenario 3: Una Sombra
+
+[ Diagrama de la Sombra](zhenChao/src/reto-001/images/DOM_SOMBRA.png)
+
+### Glosario
+* **Fuente de Luz:** Emisor de luz.
+* **Cuerpo:** Obstáculo físico que interrumpe la luz.
+* **Sombra:** Área de luz resultante de la interrupción con el cuerpo.
+* **Superficie:** Topología donde la sombra se materializa visualmente.
+
+### Consideraciones
+* El modelo ignora factores ambientales como difracción o medios de dispersión.
+
+
+### Justificaciones de Modelado
+* El modelado de la luz iluminando el cuerpo, el cuerpo generando la sombra y la sombra proyectándose en la superficie es una simplificación del fenómeno físico real.
