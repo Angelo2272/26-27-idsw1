@@ -14,7 +14,7 @@
 * Tanto la acción realizada como el impacto que produce suceden de forma simultánea durante la interacción
 
 ### Justificaciones de Modelado
-* En el modelado estricto, una entidad debe gestionar sus propios datos. Por lo tanto, es discutible permitir que una entidad externa (rol de testigo) determine directamente el Aura de otra (rol de protagonista). 
+* Normalmente una entidad debería gestionar sus propios datos. Por lo tanto, es discutible permitir que una entidad externa (rol de testigo) determine directamente el Aura de otra (rol de protagonista). 
 
 ---
 
@@ -41,7 +41,7 @@
 
 [ Diagrama de la Sombra](zhenChao/src/reto-001/images/DOM_SOMBRA.png)
 
-### Glosario
+### Entidades
 * **Fuente de Luz:** Emisor de luz.
 * **Cuerpo:** Obstáculo físico que interrumpe la luz.
 * **Sombra:** Área de luz resultante de la interrupción con el cuerpo.
