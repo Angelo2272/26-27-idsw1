@@ -1,0 +1,30 @@
+@startuml
+skinparam monochrome true
+hide circle
+hide empty members
+
+class Persona {
+  aura
+}
+
+abstract class SucesoSocial
+
+class EventoSocial
+class Valoracion
+class Lugar
+Class Internet
+
+
+SucesoSocial <|-- EventoSocial
+
+
+Persona --> EventoSocial : farmea en 
+Persona --> EventoSocial : ve 
+EventoSocial --> Lugar : se arma en
+EventoSocial --> Internet : se sube a
+
+Persona --> Valoracion : da una 
+Valoracion --> EventoSocial : califica a
+Valoracion -up-> Persona : le cambia el aura a
+
+@enduml
