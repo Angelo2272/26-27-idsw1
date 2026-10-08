@@ -1,18 +1,25 @@
 @startuml
 skinparam monochrome true
+skinparam shadowing false
 
-[*] --> EnVivo : Se arma en un Lugar
+skinparam state {
+    BackgroundColor white
+    BorderColor black
+    ArrowColor black
+}
 
-EnVivo --> Subido : Se sube a Internet
+[*] --> EnVivo : Se produce en un lugar
 
+EnVivo --> EnVivo : Persona se marca un farmeo
 
-EnVivo --> Valorado : Persona da "Me gusta" 
-EnVivo --> Valorado : Persona da "Hate" 
+EnVivo --> Publicado : Se sube a Internet
 
+EnVivo --> ValoracionRecibida : Persona presencia\ny realiza valoración
 
-Subido --> Valorado : Persona (viendo) da "Me gusta" 
-Subido --> Valorado : Persona (viendo) da "Hate" 
+Publicado --> ValoracionRecibida : Persona lo ve\ny realiza valoración
 
-Valorado --> [*] : Se aplica el cambio de aura
+ValoracionRecibida --> AuraModificada : Se procesa la valoración
+
+AuraModificada --> [*] : Fin
 
 @enduml
