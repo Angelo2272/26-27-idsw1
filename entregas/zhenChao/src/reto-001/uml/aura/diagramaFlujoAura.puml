@@ -2,9 +2,6 @@
 skinparam monochrome true
 skinparam shadowing false
 
-' El orden y las alternativas siguen diagramaSecuencia.puml.
-' Las actividades representan las relaciones del dominio, no sus clases.
-start
 
 :El EventoSocial se da en un Lugar;
 
